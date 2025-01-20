@@ -11,7 +11,7 @@ const VerifyOtp = () => {
 
   const handleOtpSubmit = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/email/sendEmail", { email, otp });
+      const response = await axios.post("https://qatarbackend.solar-ict.com/email/sendEmail", { email, otp });
       if (response.data.success) {
         alert("OTP verified successfully!");
         navigate("/login");  // Redirect to login after successful verification

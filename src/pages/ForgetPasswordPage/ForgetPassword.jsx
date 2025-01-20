@@ -25,7 +25,7 @@ const ForgetPassword = () => {
       console.log("correct password");
       try {
         const response = await axios.post(
-          `http://localhost:5000/api/auth/reset-forgotpassword/${id}/${token}`,
+          `https://qatarbackend.solar-ict.com/api/auth/reset-forgotpassword/${id}/${token}`,
           { newPassword: data.newpassword }
         );
 

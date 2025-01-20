@@ -36,7 +36,7 @@ const EditProfileModal = ({ isOpen, onClose, userData, onSave }) => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/auth/edit-profile`,
+        `https://qatarbackend.solar-ict.com/api/auth/edit-profile`,
         {
           method: "PATCH",
           headers: {

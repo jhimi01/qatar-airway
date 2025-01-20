@@ -38,7 +38,7 @@ const ImageUpload = ({ onChange }) => {
 
       // Send the URL to the backend to update the user profile
       await axios.patch(
-        "http://localhost:5000/api/auth/edit-image",
+        "https://qatarbackend.solar-ict.com/api/auth/edit-image",
         { img: uploadedImageUrl },
         { headers: { Authorization: `Bearer ${token}` } }
       );

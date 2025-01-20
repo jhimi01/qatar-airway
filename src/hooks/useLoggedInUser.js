@@ -21,7 +21,7 @@ export default function useLoggedInUser() {
         }
 
         const response = await axios.get(
-          "http://localhost:5000/api/auth/loggedin-user",
+          "https://qatarbackend.solar-ict.com/api/auth/loggedin-user",
           {
             headers: {
               Authorization: `Bearer ${token}`,

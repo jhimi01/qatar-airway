@@ -27,14 +27,14 @@ const LoginGoogle = () => {
 
           // Post data to backend
           const response = await axios.post(
-            "http://localhost:5000/api/auth/google-signup",
+            "https://qatarbackend.solar-ict.com/api/auth/google-signup",
             userData
           );
 
           if (response.status === 200) {
             console.log(response);
             const res = await axios.post(
-              "http://localhost:5000/api/auth/google-login",
+              "https://qatarbackend.solar-ict.com/api/auth/google-login",
               userData
             );
             if (res.status === 200) {

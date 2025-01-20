@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.delete("http://localhost:5000/api/auth/logout", {
+      await axios.delete("https://qatarbackend.solar-ict.com/api/auth/logout", {
         headers: { Authorization: `Bearer ${token}` },
       });
       removeCookie();

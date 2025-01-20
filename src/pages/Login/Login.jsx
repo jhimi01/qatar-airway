@@ -35,7 +35,7 @@ const Login = () => {
     setEmail(data.email);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://qatarbackend.solar-ict.com/api/auth/login",
         {
           email: data.email,
           password: data.password,
@@ -78,7 +78,7 @@ const Login = () => {
   const handleVerifyOTP = async (otp) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/verify-otp-login",
+        "https://qatarbackend.solar-ict.com/api/auth/verify-otp-login",
         {
           email: email,
           otp,

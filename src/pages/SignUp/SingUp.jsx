@@ -44,7 +44,7 @@ const SignUp = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        "https://qatarbackend.solar-ict.com/api/auth/signup",
         newUser
       );
       console.log("this is a response data", response.data);
@@ -91,7 +91,7 @@ const SignUp = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/verify-otp",
+        "https://qatarbackend.solar-ict.com/api/auth/verify-otp",
         { email, otp }
       );
       console.log("otttttttttp", response);
